@@ -1,0 +1,9 @@
+{
+  "require": {
+    "ext-dba": "*" ,
+    "ext-xsl": "*",
+    "ext-sqlite3": "*",
+    "ext-pdo": "*",
+    "ext-pdo_sqlite": "*"
+  }
+}

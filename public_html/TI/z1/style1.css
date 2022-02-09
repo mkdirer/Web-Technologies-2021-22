@@ -1,0 +1,51 @@
+
+ body {
+  margin: 0 auto;
+  max-width: 64em;
+  }
+
+  h2 {
+    font-size: 24px;
+    border: 2.5px solid rgb(173, 70, 70);
+    margin: 20px 60px;
+    text-align: center;
+  }
+
+  article {
+    margin: auto;
+    width: 65%;
+  }
+
+  table {
+    border: 2px solid blue;
+    border-collapse: collapse;
+    float: left;
+  }
+  
+  thead {
+    background-color: lightskyblue;
+  }
+
+  table td {
+    border: none;
+    text-align: center;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color:rgb(59, 228, 59);
+  }
+
+  .table_merged {
+    background-color:rgb(202, 125, 209);
+    columns: 5;
+  }
+
+  table tfoot {
+    background-color: rgb(243, 210, 148);
+  }
+
+  img {
+    width: 220px;
+    float: right;
+    display: block;
+  }

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE projekt [
+<!ELEMENT projekt (zadania, kierownik, data_zlozenia, opoznienie)*>
+<!ELEMENT zadania (osoby)*>
+<!ELEMENT osoby (imie , nazwisko)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT kierownik (imiona , nazwisko)>
+<!ELEMENT imiona (#PCDATA)>
+<!--<!ELEMENT nazwisko (#PCDATA)> -->
+<!ELEMENT data_zlozenia (#PCDATA)>
+<!ELEMENT opoznienie (#PCDATA)>
+]>
+<projekt>
+  <zadania>
+    <osoby>
+    <imie>Adam</imie>
+   
+      <nazwisko>Kowalski</nazwisko>
+     
+    </osoby>
+    <osoby>
+     
+       <imie>Marek</imie>
+      <nazwisko>Abacki</nazwisko>
+    </osoby>
+    <osoby>
+      <imie>Andrzej</imie>
+      <nazwisko>Babacki</nazwisko>
+    </osoby>
+  </zadania>
+  <kierownik>
+    <imiona>Przemek, Marek</imiona>
+    <nazwisko>Nowak</nazwisko>
+  </kierownik>
+  <data_zlozenia>21.03.2021</data_zlozenia>
+  <opoznienie>7 miesiency</opoznienie>
+</projekt>

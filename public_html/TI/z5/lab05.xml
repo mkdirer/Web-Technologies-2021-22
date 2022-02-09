@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="lab05.xsl"?>
+<!-- <!DOCTYPE biblioteka SYSTEM "/home/stud2019/9wajda/public_html/TI/z2/lab02.dtd">
+<?xml-model href="lab02.xsd"?> -->
+<biblioteka>
+    <nazwa>BIBLIOTEKA</nazwa>
+    <dzial>
+        <nazwadzialu>Baśnie, legendy, podania</nazwadzialu>
+            <ksiazka>
+                <tytul>"Bajka o rybaku i rybce"</tytul>
+
+                <autor>
+                    <imie>Aleksander</imie>
+                    <nazwisko>Puszkin</nazwisko>
+                </autor>
+
+                <cena>135.23</cena>
+
+            </ksiazka>
+
+            <ksiazka>
+                <tytul>"Wybór bajek i satyr"</tytul>
+                <autor>
+                    <imie>Ignacy</imie>
+                    <nazwisko>Krasicki</nazwisko>
+                </autor>
+
+                <cena>67.56</cena>
+            </ksiazka>
+
+             <ksiazka>
+                <tytul>"Baśnie Andersena"</tytul>
+                <autor>
+                    <imie>Hans</imie>
+                    <nazwisko>Andersen</nazwisko>
+                </autor>
+
+                <cena>34.56</cena>
+            </ksiazka>
+
+    </dzial>
+
+    <dzial>
+        <nazwadzialu>Powieści i opowiadania fantastyczne</nazwadzialu>
+            <ksiazka>
+                <tytul>"Nie mam ust, a muszę krzyczeć"</tytul>
+                <autor>
+                    <imie>Harlan</imie>
+                    <nazwisko>White</nazwisko>
+                </autor>
+
+                <cena>67.56</cena>
+            </ksiazka>
+
+            <ksiazka>
+                <tytul>"Przypomnimy to panu hurtowo"</tytul>
+                
+                <autor>
+                    <imie>Philip</imie>
+                    <nazwisko>Dick</nazwisko>
+                </autor>
+
+                <autor>
+                    <imie>Harold</imie>
+                    <nazwisko>Stonk</nazwisko>
+                </autor>
+
+
+                <cena>48.98</cena>
+            </ksiazka>
+
+    </dzial>
+
+    <dzial>
+        <nazwadzialu>Poezja, Dramat</nazwadzialu>
+            <ksiazka>
+                <tytul>"Wypiór"</tytul>
+                <autor>
+                    <imie>Grzegorz</imie>
+                    <nazwisko>Uzdański</nazwisko>
+                </autor>
+
+                <cena>78.54</cena>
+            </ksiazka>
+
+             <ksiazka>
+                <tytul>"Po nitce"</tytul>
+                <autor>
+                    <imie>Piotr</imie>
+                    <nazwisko>Szewc</nazwisko>
+                </autor>
+
+                <cena>23.54</cena>
+            </ksiazka>
+
+            <ksiazka>
+                <tytul>"Kresy wszechświata"</tytul>
+                <autor>
+                    <imie>Marcin</imie>
+                    <nazwisko>Gołąbek</nazwisko>
+                </autor>
+
+                <cena>28.99</cena>
+            </ksiazka>
+
+            <ksiazka>
+                <tytul>"Na setkach wioseł"</tytul>
+                <autor>
+                    <imie>Anna</imie>
+                    <nazwisko>Matysiak</nazwisko>
+                </autor>
+
+                <cena>34.99</cena>
+            </ksiazka>
+
+
+
+    </dzial>
+
+    <dzial>
+        <nazwadzialu>Powieści i opowiadania historyczne</nazwadzialu>
+            <ksiazka>
+                <tytul>"Potop"</tytul>
+                <autor>
+                    <imie>Henryk</imie>
+                    <nazwisko>Sienkiewicz</nazwisko>
+                </autor>
+
+                <cena>13.56</cena>
+            </ksiazka>
+    </dzial>
+
+
+</biblioteka>

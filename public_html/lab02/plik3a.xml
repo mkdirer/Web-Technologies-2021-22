@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+<pytanieTestowe>
+  <tresc> Do czego w HTML mozna uzyc konstrukcji:
+    <![CDATA[ Do czego w HTML moze byc wykorzystana konstrukcja:
+     <div class="underline"> ]]>
+  </tresc>
+  <odpowiedzA pkt="0">Do podkreslenia tekstu</odpowiedzA>
+  <odpowiedzB pkt="1">Do rozpoczecia nowego bloku tekstu z zastosowaniem klasy stylu o nazwie "underline"</odpowiedzB>
+  <odpowiedzC pkt="-0.5">Do wprowadzenia linii poziome</odpowiedzC>
+</pytanieTestowe>

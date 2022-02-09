@@ -1,0 +1,56 @@
+<bookstore>
+  <book category="sci-fi">
+    <title lang="en">Dune</title>
+    <author>Frank Herbert</author>
+    <year>1965</year>
+    <price>45.00</price>
+  </book>
+  <book category="fantasy">
+    <title lang="en">The Lord of the Rings</title>
+    <author> J. R. R. Tolkien</author>
+    <year>1954</year>
+    <price>45.00</price>
+  </book>
+  <book category="drama">
+    <title lang="en">Forrest Gump</title>
+    <author>Winston Groom</author>
+    <year>1986</year>
+    <price>20.00</price>
+  </book>
+  <book category="sci-fi">
+    <title lang="pl">Perfekcyjna Niedoskonalosc</title>
+    <author>Jacek Dukaj</author>
+    <year>2004</year>
+    <price>35.00</price>
+  </book>
+  <book category="sci-fi drama">
+    <title lang="pl">Robot Bob</title>
+    <author>Jacek Doe</author>
+    <year>2000</year>
+    <price>15.00</price>
+  </book>
+  <book category="dark fantasy, sci-fi, horror, western">
+    <title lang="en">The Dark Tower: The Gunslinger</title>
+    <author>Stephen King</author>
+    <year>1987</year>
+    <price>30.00</price>
+  </book>
+  <book category="dark fantasy, sci-fi, horror, western">
+    <title lang="en">The Dark Tower II: The Drawing of the Three</title>
+    <author>Stephen King</author>
+    <year>1982</year>
+    <price>30.00</price>
+  </book>
+  <book category="gothic novel, psychological horror">
+    <title lang="en">The Shining</title>
+    <author>Stephen King</author>
+    <year>1977</year>
+    <price>45.00</price>
+  </book>
+  <magazine category="IT">
+    <title lang="en">How to program stuff</title>
+    <author>John Doe</author>
+    <year>1991</year>
+    <price>10.00</price>
+  </magazine>
+</bookstore>

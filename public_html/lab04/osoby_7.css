@@ -1,0 +1,4 @@
+table {border-style: solid; border-color: #000000; padding: 5px; cellpadding : 5;}
+td { border-width: 1px; border-style: solid; border-color: #000000; padding: 5px; }
+.red {background-color :red;}
+.green {background-color :green;}

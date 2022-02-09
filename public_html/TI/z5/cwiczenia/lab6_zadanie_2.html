@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+            <script type="text/javascript">
+
+                function validate(){
+                    if (document.form1.imie.value.length<4) {
+                        document.getElementById("divImie").innerHTML = 'Imie (*pole wymagane)  <font style="color: red"> Brak podanego imienia</font>'
+                    }
+                    else{ document.getElementById("divImie").innerHTML = 'Imie (*pole wymagane) '
+                    }
+                    if(document.form1.nazwisko.value.length<4){
+                        document.getElementById("divNazwisko").innerHTML = 'Nazwisko (*pole wymagane) <font style="color: red"> Brak podanego nazwiska</font>'
+                    }
+                    else{ document.getElementById("divNazwisko").innerHTML = 'Nazwisko (*pole wymagane)'}
+                    if (document.form1.email.value.indexOf("@")==-1){
+                        document.getElementById("divEmail").innerHTML = 'Adres e-mail: (*pole wymagane)<font style="color: red"> Brak podanego Emaila</font>'
+                    }
+                    else{ document.getElementById("divEmail").innerHTML = 'Adres e-mail: (*pole wymagane)'}
+                    if (document.form1.rok.options.selectedIndex==0) {
+                        document.getElementById("divRok").innerHTML = 'Rok studiow (*pole wymagane) <font style="color: red">  Brak podanego roku</font>'
+                    }
+                    else{ document.getElementById("divRok").innerHTML = 'Rok studiow (*pole wymagane)'}
+                }
+
+
+            </script>
+            <title>JavaScript - skrypt 2</title>
+    </head>
+    <body>
+        <form name="form1">
+            <div id="divImie">Imie (*pole wymagane) </div><br/>
+            <input type="text" size="15" name="imie" />
+            <br/><br/><div id="divNazwisko">Nazwisko (*pole wymagane) </div><br/>
+            <input type="text" size="15" name="nazwisko" />
+            <br/><br/><div id="divEmail">Adres e-mail: (*pole wymagane)</div><br/>
+            <input type="text" size="15" name="email"/>
+            <br/><br/><div id="divRok">Rok studiow (*pole wymagane)</div><br/>
+            <select name="rok" required>
+                <option selected>Wybierz rok</option>
+                <option value="1">rok 1</option>
+                <option value="2">rok 2</option>
+                <option value="3">rok 3</option> 
+            </select><br />
+            <p>Uwagi: (*pole nie wymagane)</p>
+            <textarea name="uwagi" rows="3" cols="25"></textarea> <br />
+            <button type="button" onclick="validate()">Potwierdź</button>
+        </form>
+    </body>
+</html>

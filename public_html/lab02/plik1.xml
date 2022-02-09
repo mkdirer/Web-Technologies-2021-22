@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF8"?>
+<dane>
+  <osoba>
+    <imie>Adam</imie>
+    <nazwisko>Kowalski</nazwisko>
+    
+  </osoba>
+  <osoba>
+    <imie>Marek</imie>
+    <nazwisko>Abacki</nazwisko>
+  </osoba>
+  <osoba>
+    <imie>Andrzej</imie>
+    <nazwisko>Babacki</nazwisko>
+  </osoba>
+  
+</dane>

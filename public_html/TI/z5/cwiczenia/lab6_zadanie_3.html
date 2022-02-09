@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript - skrypt 3</title>
+<style>
+    body {
+        background: #dddddd;
+    }
+    #canvas {
+        margin: 10px;
+        padding: 10px;
+        background: #ffffff;
+        border: thin inset #aaaaaa;
+    }
+</style>
+  
+</head>
+<body>
+<canvas id='canvas' width='600' height='400'>
+   Canvas not supported
+</canvas>
+
+    <script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    context.strokeStyle = "#ddd";
+    
+    for (var x = 0.5; x < 600; x += 10) {
+    context.moveTo(x, 0);
+    context.lineTo(x, 400);
+    }
+    for (var y = 0.5; y < 400; y += 10) {
+    context.moveTo(0, y);
+    context.lineTo(600, y);
+    }
+    context.stroke();
+    context.beginPath();
+    context.moveTo(0, 375);
+    context.lineTo(240, 375);
+    context.moveTo(260, 375);
+    context.lineTo(500, 375);
+    context.moveTo(495, 365);
+    context.lineTo(500, 375);
+    context.lineTo(495, 385);
+    
+    context.moveTo(60, 20);
+    context.lineTo(60, 153);
+    context.moveTo(60, 173);
+    context.lineTo(60, 395);
+    context.moveTo(60, 20);
+    context.lineTo(55, 30);
+    context.moveTo(60, 20);
+    context.lineTo(65, 30);
+
+    var f=4;
+    var g=100;
+    context.moveTo(30, 400-(f*3+g));
+    context.lineTo(400, 400-(f*40+g));
+    
+    context.font = "bold 12px sans-serif";
+    context.strokeStyle = "#00A";
+    context.stroke();
+    context.fillText("y = ax + b", 250, 220);
+    context.fillText("x", 248, 380);
+    context.fillText("y", 58, 165);
+
+</script>
+  
+</body>
+</html>
+</pre><br />
+ 
+</body>
+</html>

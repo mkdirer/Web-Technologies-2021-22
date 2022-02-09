@@ -1,0 +1,9 @@
+applications:
+- disk_quota: 256M
+  buildpack: https://github.com/cloudfoundry/python-buildpack.git
+  name: ti-lab05-app5-lw
+  path: .
+  instances: 1
+  memory: 64M
+  stack: cflinuxfs3
+  command: python server.py

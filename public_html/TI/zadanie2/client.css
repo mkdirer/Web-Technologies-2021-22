@@ -1,0 +1,28 @@
+html
+{
+    scroll-behavior: smooth;
+    background-color: rgb(206, 214, 129) ;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+   
+}
+
+table
+{
+    margin: 20px;
+    margin-left: 90px;
+    border: solid 1px rgb(34, 27, 86);
+    border-radius: 2px;
+    justify-content:center;
+    align-items:center;
+    font-family:  'PT Sans',sans-serif;
+    
+}
+
+tr{
+    height: 30px;
+}
+th, td {
+    width: 150px;
+}

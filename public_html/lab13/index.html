@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Test aplikacji WebSocket echo</title>
+    <script>
+      var open = false
+        , lastMessage
+  
+      window.onload = function () {
+        // utwórz gniazdo
+        var ws = new WebSocket('ws://pascal:1302');
+        ws.onopen = function () {
+          open = true;
+        }
+        ws.onmessage = function () {
+          // odebrano komunikat zwrotny, zmierz opoznienie
+          console.log('Odebrano');
+          dd = new Date - lastMessage;
+          console.log(dd);
+          document.getElementById('latency').innerHTML = new Date - lastMessage;
+        }
+  
+        // zdefiniuj funkcje obsługi dla formularza
+        document.getElementById('send').onsubmit = function () {
+          if (open) {
+            // zapisz stempel czasowy
+            lastMessage = +new Date;
+            console.log(lastMessage);
+            // wy?lij komunikat
+            ws.send(document.getElementById('text').value);
+            // wyczy?ć pole tekstowe
+            document.getElementById('text').value = '';
+            document.getElementById('text').focus();
+          }
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>WebSocket Echo</h1>
+    <h2>Opó?nienie: <span id="latency"></span>ms</h2>
+  
+    <form id="send">
+      <input type="text" id="text">
+      <button>Wy?lij</button>
+    </form>
+  </body>
+</html>

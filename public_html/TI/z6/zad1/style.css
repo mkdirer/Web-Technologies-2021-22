@@ -1,0 +1,65 @@
+body {font-family: Arial;}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(199, 206, 158);
+  background-color: #f0dcdc;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: rgb(219, 212, 196);
+}
+
+.tab button.active {
+  background-color: rgb(164, 216, 187);
+}
+.buttonlink
+{
+    width: 249px;
+}
+
+.divlink {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(164, 216, 187);
+  border-top: none;
+}
+#content
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+#MyDivElement
+{
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 300px;
+}
+table
+{
+  border:1px solid black;
+}
+td
+{
+    background-color: rgb(216, 179, 233);
+    border:1px solid black;
+    padding: 6px;
+}
+.head_row
+{
+    background-color: rgb(134, 175, 87);
+}

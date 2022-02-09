@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="lab06b.js"></script>
+        <link rel="stylesheet" href="lab06b.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <div class="dial">
+            <h1 class="header">Proszę wybrać!</h1>
+
+            <div class="button__options">
+                <button onclick="firstSet()">
+                    Pierwszy Zestaw
+                </button>
+                <button onclick="secondSet()">
+                    Drugi Zestaw
+                </button>
+            </div>
+            <select class="select__options" onChange="update()">
+                <option>Kliknij jeden z przycisków</option>
+            </select>
+            
+            <div id="placeholder">Tu pojawi się wybrana opcja</div>
+        </div>
+        
+    </body>
+</html>

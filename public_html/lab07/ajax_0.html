@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Ajax Hello World Example</title>
+    <script type="text/javascript" src="ajax0.js"></script>
+    <script type="text/javascript">
+    
+ 
+    function read(url) {
+      req = getHTTPObject();
+      if (req) { //nowoutworzony obiekt XMLHttpRequest
+         req.onreadystatechange=onResponse; //rejestracja po stronie klienta funkcji nasłuchującej na odpowiedź serwera
+         req.open("GET", url, true); //inicjalizacja obiektu żądania asynchronicznego
+         req.send(null); //aktywacja połączenia i realizacja żądania
+      }    }
+//------------------------------------------------------------------------------------------------------------------------------------
+    function onResponse() { //funkcja wywoływana, gdy  pole readyState zmieni wartość
+      if (req.readyState==4) { //poprawne obsłuzenie żądania
+         if (req.status==200) { //wstawienie otrzymanej treści do zawartości strony
+            document.getElementById("msg").innerHTML = req.responseText;          
+     }
+     else
+     { document.getElementById("msg").innerHTML = 'error :(';   } 
+}    }
+//------------------------------------------------------------------------------------------------------------------------------------
+</script>
+ 
+  </head>
+  <body>
+    <h1>Hello world example ...</h1>
+     
+    <hr>
+    <div id="msg"> click the button to get the message :)
+    </div>
+    <hr>
+    <button onclick="read('ajax_kom.html');">test</button> <!--Klient generuje zdarzenie-->
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Ajax: Przyklad 6</title>
+      <script src="lab06b.js" type="text/javascript"></script>
+   </head>
+   <body >
+   <p  >
+   <input type="button" value="Pierwszy zestaw"
+       onclick="pobierzDane(1, 'listaOpcji');" />
+   <input type="button" value="Drugi zestaw"
+       onclick="pobierzDane(2, 'listaOpcji');" />
+    <br /><br />
+  <select id="listaOpcji"
+        onChange="listaOpcjiChange('dataDiv', 'listaOpcji')">
+   <option>Kliknij jeden z przycisków</option>
+  </select></p >
+  <div id="dataDiv"><p >
+   Tu pojawi się wybrana opcja.</p >
+  </div>
+</body >
+</html>

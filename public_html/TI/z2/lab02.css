@@ -1,0 +1,71 @@
+biblioteka{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nazwa {
+    color: rgb(155, 103, 6);
+    display: block;
+    border: 3px solid red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+}
+
+dzial {
+    display: block;
+    border: 3px double black;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+}
+
+nazwadzialu {
+    color: darkgreen;
+    padding: 10px;
+}
+
+ksiazka {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid gray;
+    background-color: rgb(236, 236, 236);
+}
+
+ksiazka:nth-child(even) {
+    background-color: yellow;
+}
+
+tytul{
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+autor {
+    /*display: block;*/
+    font-style: italic;
+    
+}
+
+imie {
+    color: green;
+}
+
+
+nazwisko {
+    text-decoration: underline;
+    color: red;
+}
+
+cena {
+    display: block;
+    font-style: italic;
+    color: blue;
+}

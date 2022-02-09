@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodaj_Książki</title>
+  <link rel="StyleSheet" href="lab04.css" type="text/css">
+</head>
+<body style="width: 100%;">
+  <form action="../../cgi-bin/lab04.py" method="post">
+    <fieldset>
+      <legend>Książki</legend>
+      <div id="can">
+      <label for="tytul">Tytuł</label>
+      <input id="text-input" type="text" name="tytul" value="" />
+      </br>
+      <label for="autor">Autor</label>
+      <input id="text-input" type="text" name="autor" value="" />
+      </div>
+      <input type="submit" value="Wyślij" />
+    </fieldset>
+  </form>
+</body>
+</html>

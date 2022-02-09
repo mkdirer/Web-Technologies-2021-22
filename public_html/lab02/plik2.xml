@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DC nr_spotkania="2">
+  <pozdrowienie> Witajcie na kolejnych zajeciach !!!</pozdrowienie>
+  <temat> XML &amp; DTD </temat>
+  <!-- komentarz w XML -->
+  <zakres>
+    <z> przykladowe dokumenty XML </z>
+    <z> arkusze stylow w XML </z>
+    <z> przyklad najprostszego przeksztalcenia XSL dla XML <!-- komentarz w XML --> </z>
+    <z> DTD konstrukcja </z>
+   </zakres>
+   <zadanie_zaliczajace/>
+   <![CDATA[[dane ignorowane przez parser ('&' ,'<')]]]>
+</DC>

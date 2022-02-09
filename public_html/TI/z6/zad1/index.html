@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>Zadanie 6</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+
+
+<h2>Zadanie 1</h2>
+<div class="tab">
+  <button class="buttonlink" onclick="openForm(event, 'Nowe kolo')">Nowe kolo</button>
+  <button class="buttonlink" onclick="openForm(event, 'Lista rekordow')">Rysuj kola</button>
+</div>
+
+<div id="Nowe kolo" class="divlink">
+    <div style="text-align:center" >
+        <form name="form1" onsubmit="return validate()" form action="#">
+ 
+             <p>Wspolrzedne srodka</p>
+             <input type="text" size="20" id="pole1" name="pole1" /><br/>
+             <input type="text" size="20" id="pole2" name="pole2" /><br/>
+             
+             <p>Promien</p>
+             <input type="text" size="20" id="pole3" name="pole3" /><br/>
+             <br/>
+             <br/>
+             <p>Kolor</p>
+             <input type="text" size="20" id="pole4" name="pole4" /><br/>
+             <input type="button" value="Wykonaj" onclick="sendRequest()"/>
+             
+         </form>
+      </div>
+</div>
+
+<div id="Lista rekordow" class="divlink">
+  <div id="MyDivElement">
+    <table>
+        <tr> Brak kol </tr>
+    </table>
+  </div>
+</div>
+
+</div> 
+</body>
+</html> 
+

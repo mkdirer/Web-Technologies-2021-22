@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script type="text/javascript">
+            function validate()
+            {
+                var err_list = "";
+                var flag_err = false;
+
+                if(document.form_1.nazwisko.value.length < 4)
+                {
+                    err_list = err_list + "Pole nazwisko jest za krótkie.\n";
+                    flag_err = true;
+                }
+                if(document.form_1.imie.value.length < 4)
+                {
+                    err_list = err_list + "Pole imie jest za krótkie.\n";
+                    flag_err = true;
+                }
+                if(document.form_1.email.value.length < 1)
+                {
+                    err_list = err_list + "Pole email jest wymagane.\n";
+                    document.form_1.email.focus();
+                    flag_err = true;
+                }
+                else if(document.form_1.email.value.indexOf("@")==-1)
+                {
+                    err_list = err_list + "Podany email nie istnieje.\n";
+                    flag_err = true;
+                }
+                if(document.form_1.rok_studiow.value == "Wybierz rok")
+                {
+                    err_list = err_list + "Pole rok studiów nie zostało wybrane.\n";
+                    flag_err = true;
+                }
+
+                if(flag_err)
+                {
+                    alert(err_list);
+                }
+                else
+                {
+                    alert("Udało ci się wypełnić formularz!\n" +
+                    "Imie: " + document.form_1.nazwisko.value + "\n" + 
+                    "Nazwisko: " + document.form_1.imie.value + "\n" +
+                    "E-mail: " + document.form_1.email.value + "\n" +
+                    "Rok studiów: " + document.form_1.rok_studiow.value + "\n" +
+                    "Uwagi: " + document.form_1.uwagi.value + "\n" )
+                }
+            }
+        </script>
+        <title>JavaScript - skrypt 1</title>
+    </head>
+    <body>
+        <form name="form_1" onsubmit="return validate()">
+            <p>Imie (*pole obowiązkowe)</p>
+            <input type="text" size="15" name="imie" /><br/>
+            <p>Nazwisko (*pole obowiązkowe)</p>
+            <input type="text" size="15" name="nazwisko" /><br/>
+            <p>Email (*pole obowiązkowe)</p>
+            <input type="text" size="15" name="email" /><br/>
+            <p>Rok studiów (*pole obowiązkowe)</p>
+            <select name="rok_studiow" size = 1>
+                <option selected>Wybierz rok</option>
+                <option value="1">Rok 1</option>
+                <option value="2">Rok 2</option>
+                <option value="3">Rok 3</option>
+            </select>
+            <p>Uwagi (*pole nieobowiązkowe)</p>
+            <textarea name="uwagi" rows="4" cols="15"></textarea></br>
+            <input type="submit" name="B1" value="Potwierdź" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xsd:element name="projekt" type="projekt-typ"/>
+  <xsd:element name="nazwisko" type="xsd:string"/>
+  <xsd:element name="imie" type="xsd:string"/>
+  <xsd:element name="imiona" type="xsd:string"/>
+    <xsd:complexType name="projekt-typ">
+                <xsd:sequence>
+                <xsd:element name="zadania" type="zadania-typ" maxOccurs="unbounded"/>
+                </xsd:sequence>
+                <xsd:sequence>
+                <xsd:element name="kierownik" type="kierownik-typ" maxOccurs="unbounded"/>
+                </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="zadania-typ">
+                <xsd:element name="osoby" type="osoby-typ" maxOccurs="unbounded"/>
+    </xsd:complexType>
+    <xsd:complexType name="kierownik-typ">
+                <xsd:sequence>
+                        <xsd:element ref="imiona" maxOccurs="unbounded"/>
+                        <xsd:element ref="nazwisko"/>
+                </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="osoby-typ">
+                <xsd:sequence>
+                        <xsd:element ref="imie" maxOccurs="unbounded"/>
+                        <xsd:element ref="nazwisko"/>
+                </xsd:sequence>
+    </xsd:complexType>
+        
+  </xs:element>
+</xs:schema>
